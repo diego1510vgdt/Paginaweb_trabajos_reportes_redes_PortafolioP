@@ -1,0 +1,10 @@
+.practicas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+
+.practica{
+    background-color: aqua;
+    border: 2rem;
+}
