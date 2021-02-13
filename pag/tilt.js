@@ -23,7 +23,8 @@
     // Browser globals
     factory(jQuery);
   }
-})(function ($) {
+})
+(function ($) {
   $.fn.tilt = function (options) {
     /**
      * RequestAnimationFrame
