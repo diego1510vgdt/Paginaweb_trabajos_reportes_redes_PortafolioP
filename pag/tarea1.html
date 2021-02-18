@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redes digitales de datos - Lab</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="shortcut icon" href="images/icon.ico"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,400;0,600;1,300;1,400;1,600&family=Muli:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="spinner-container">
+      <div class="circles">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <header class="header">
+        <div class="img-wrapper">
+          <img src="images/tarea1.jpg" />
+        </div>
+        <div class="banner">
+          <h1>Configuración de Red Local</h1>
+        </div>
+        <a href="index.html">
+          <div class="back-btn" id="backbtn">
+            <i class="fas fa-arrow-left"></i>
+          </div>
+        </a>
+      </header>
+
+      <header class="header-tarea1">
+        <div class="section-header">
+          <h2 class="section-heading">Comunicación serial</h2>
+          <div class="underline"></div>
+          <p>La comunicación serie o comunicación secuencial, 
+            en telecomunicaciones e informática, es el proceso 
+            de envío de datos de un bit a la vez, de forma secuencial, 
+            sobre un canal de comunicación o un bus. A lo largo de las 
+            prácticas realizadas se irá construyendo por partes la comunicación
+            serial usando dos arduinos y la herramienta Tinkercad</p>
+            <h3>Contador de pulsos</h3>
+            <p>La primer parte de esta serie trata de crear dos funciones, una para el primer arduino 
+              que permita enviar una serie de pulsos a cierta frecuencia, y otra para el segundo arduino 
+              que permita leer dichos pulsos (Variación de 0 a 1) y contarlos. Los resultados se muestran 
+              en el monitor serial y se puede contar los pulsos por segundo hasta por milisegundo.</p>
+            <div class="frame-tinker">
+              <iframe width="725" height="453" src="https://www.tinkercad.com/embed/2ed3JtyZxjO?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+            </div>
+            <h3>Contador de tiempo</h3>
+            <p>La tercera parte consiste en crear dos funciones, una que permita enviar un pulso por un tiempo 
+              determinado que se encuentra en el primer arduino y la segunda que permita leer la cantidad de 
+              tiempo que duró ese pulso, esta segunda función se encuentra en el segundo arduino.</p>
+            <div class="frame-tinker">
+              <iframe width="725" height="453" src="https://www.tinkercad.com/embed/aqjhimTlrnm?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+            </div>
+            <h3>Convertidor a binario</h3>
+            <p>La tercera parte de la serie de ejercicios trata de crear una función para un primer arduino 
+              que permita leer el valor de un potenciómetro y que pueda se representado en binario en un 
+              arreglo de 8 bits, cada bit debe de poder ser envíado por un puerto del arduino. La segunda 
+              función dentro del arduino numero dos, realiza la lectura de los bits enviados por el primer 
+              arduino en ocho de sus puertos y los debe transformar en numeros enteros para poder visualizarlos 
+              desde consola.</p>
+            <div class="frame-tinker">
+              <iframe width="725" height="453" src="https://www.tinkercad.com/embed/kMP6eE4p9qN?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+            </div>
+            <h3>Comunicación asincrona</h3>
+            <p>La parte final del ejercicio consiste en elaborar crear una función para un primer arduino 
+              que permita leer el valor de un potenciómetro y que pueda se representado en binario en un 
+              arreglo de 8 bits un código de programación que permita enviar los bits del arreglo en orden 
+              y en serie siguiendo las siguientes características:</p>
+              <ol>
+                <li>Iniciar el envió de los datos siempre con una señal HIGH (En total se enviarán 9 datos, 
+                  el primer bit en HIGH y posteriormente los 8 bits de información).</li>
+                <li>Enviar los datos con una duración del pulso predeterminada, ejemplo 1000 ms.</li>
+                <li>Enviar siempre la misma cantidad de bits.</li>
+              </ol>
+            <p>Utilizando un segundo Arduino, diseñar una función que permita adquirir el valor en bits 
+              de la señal de comunicación del Arduino anterior, la procese y la convierte en un dato decimal 
+              que finalmente enviara al monitor serial.</p>
+            <div class="frame-tinker">
+              <iframe width="725" height="453" src="https://www.tinkercad.com/embed/7s8OAajnPfR?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+            </div>
+        </div>
+      </header>
+      
+      <a href="#">
+        <div class="hamburger-menu"></div>
+        <div class="scroll-btn" id ="scrollbtn">
+          <i class="fas fa-arrow-up"></i>
+        </div>
+      </a>
+
+      <footer class="footer">
+        <div class="footer-content">
+          <p class="copyright">
+            Copyright &copy; 2020, CodeAndCreate - All Rights Reserved
+          </p>
+          <div class="social-list">
+            <a href="https://www.facebook.com/diego.vegadeita.3/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/dvdi888/?hl=es-la"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/DiegoVegaDeIta1"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </footer>
+
+    <script src="script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script src="tilt.js"></script>
+  </body>
+</html>

@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Redes digitales de datos - Lab</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="shortcut icon" href="images/icon.ico"/>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
@@ -27,8 +28,13 @@
         <div></div>
       </div>
     </div>
-
     <div class="container">
+      <div class="hamburger-menu">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+        <span>Cerrar</span>
+      </div>
       <header class="header">
         <div class="img-wrapper">
           <img src="images/prac1bg.jpg" />
@@ -42,28 +48,173 @@
           </div>
         </a>
       </header>
-
-      <header class="header">
-        <div class="section-header">
-          <h2 class="section-heading">Introducción</h2>
-          <div class="underline"></div>
+      <section class="sidebar">
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="#" class="menu-link" data-content="Home">Home</a>
+          </li>
+          <li class="menu-item">
+            <a href="#intro" class="menu-link" data-content="Introducción">Introducción</a>
+          </li>
+          <li class="menu-item">
+            <a href="#objt" class="menu-link" data-content="Objetivos">Objetivos</a>
+          </li>
+          <li class="menu-item">
+            <a href="#marco" class="menu-link" data-content="Marco Teórico">Marco</a>
+          </li>
+          <li class="menu-item">
+            <a href="#desa" class="menu-link" data-content="Desarrollo y Evidencias">Desarrollo</a>
+          </li>
+          <li class="menu-item">
+            <a href="#conc" class="menu-link" data-content="Conclusión">Conclusión</a>
+          </li>
+          <li class="menu-item">
+            <a href="#ref" class="menu-link" data-content="Referencias">Referencias</a>
+          </li>
+        </ul>
+        <div class="social-media">
+          <a href="https://www.facebook.com/diego.vegadeita.3/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/dvdi888/?hl=es-la"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/DiegoVegaDeIta1"><i class="fab fa-twitter"></i></a>
         </div>
-      </header>
-
-      <header class="header">
+      </section>
+      <section class="header">
         <div class="section-header">
-          <h2 class="section-heading">Objetivos</h2>
+          <h2 class="section-heading" id="intro">Introducción</h2>
           <div class="underline"></div>
+          <div class="intro">
+            <p>El uso de redes locales es de vital importancia en la actualidad. 
+              Saber acerca de la configuración de las redes para mayor seguridad y mejor desempeño pasó 
+              de ser algo raro de ver a algo fundamental para poder usar aparatos electrónicos modernos 
+              (Principalmente, aparatos del internet de las cosas)</p>
+            <p>En esta práctica se usa la configuración de un router para montar un servidor local en una red doméstica
+              Usando diversas herramientas como html y algunos comandos básicos de cmd en windows</p>
+          </div>
         </div>
-      </header>
-      
+      </section>
+      <section class="header">
+        <div class="section-header">
+          <h2 class="section-heading" id="objt">Objetivos</h2>
+          <div class="underline"></div>
+          <h3 class="objetivos">Objetivo General</h3>
+          <p>Conocer, investigar e identificar los pasos para configurar 
+            una red local y el acceso a recursos de un equipo en red.</p>
+          <h3>Objetivos específicos</h3>
+          <ol>
+            <li>Identifica la Ip de acceso de la red de tu router y accede a su ruta de configuración.</li>
+            <li>Elabora un mapa de accesos de equipos y sus respectivas IPs en la Red.</li>
+            <li>En tu computadora instala Xampp para configurar un servidor local, habilita los servicios 
+              de Apache y monta un sitio web: <a href="https://www.apachefriends.org/es/index.html">https:
+                //www.apachefriends.org/es/index.html</a></li>
+            <li>Habilita el acceso al puerto 80 desde el firewall del equipo configurado como el servidor 
+              local.</li>
+            <li>Comprueba el acceso al sitio web montado en el servidor local desde 3 dispositivos distintos 
+              (para acceder es necesario estar en la misma red).</li>
+          </ol>
+        </div>
+      </section>
+      <section class="header">
+        <div class="section-header" >
+          <h2 class="section-heading" id="marco">Marco Teórico</h2>
+          <div class="underline"></div>
+          <p>Una <b>red de área local</b>(LAN) es una red de computadoras que abarca un área reducida 
+            a una casa, un departamento o un edificio.</p>
+          <p>La <b>topología de red</b> define la estructura de una red. Una parte de la definición 
+            topológica es la topología física, que es la disposición real de los cables o 
+            medios. La otra parte es la topología lógica, que define la forma en que los hosts 
+            acceden a los medios para enviar datos.</p>
+          <p>La <b>topología en estrella</b> conecta todos los nodos con un nodo central. El nodo 
+            central conecta directamente con los nodos, enviándoles la información del nodo de
+            origen, constituyendo una red punto a punto. Si falla un nodo, la red sigue 
+            funcionando, excepto si falla el nodo central, que las transmisiones quedan 
+            interrumpidas.</p>
+          <p>Un <b>enrutador</b> (del inglés router) o encaminador,​ es un dispositivo que permite 
+            interconectar computadoras que funcionan en el marco de una red. Su función es la 
+            de establecer la ruta que destinará a cada paquete de datos dentro de una red 
+            informática.</p>
+        </div>
+      </section>
+      <section class="header-desa">
+        <div class="section-header">
+          <h2 class="section-heading" id="desa">Desarollo y Evidencias</h2>
+          <div class="underline"></div>
+          <div class="meto">
+            <p>Se accedió al usuario root del router doméstico el cuál es un HG8145V5</p>
+            <div class="image-gallery">
+              <div class="img">
+                <img src="images/prac1/4.jpg" alt="Verificando la IP del router" data-original="4.jpg">
+              </div>
+              <div class="img">
+                <img src="images/prac1/1.png" alt="Acceso a la interfaz de configuración del router" data-original="1.png">
+              </div>
+            </div>
+            <p>Con dicho acceso se creó un diagrama de los aparatos conectados a ese router</p>
+            <div class="diagrama">
+              <img src="images/prac1/18.png">
+            </div>
+            <p>Una vez instalado Xampp, se habilitóel acceso al puerto 80 y se montó un sitio 
+              web en un servidor local al que se accedió con distintos dispositivos</p>
+              <div class="image-gallery">
+                <div class="img">
+                  <img src="images/prac1/5.png" alt="Pantalla principal de Xampp" data-original="5.png">
+                </div>
+                <div class="img">
+                  <img src="images/prac1/10.png" alt="Habilitando puertos 80 y 443 con regla TCP" data-original="10.png">
+                </div>
+                <div class="img">
+                  <img src="images/prac1/13.png" alt="Asignando nombre y descripción a la regla de los puertos" data-original="13.png">
+                </div>
+                <div class="img">
+                  <img src="images/prac1/7.png" alt="Inserción del html al proyecto de Xampp y como página en la red local" data-original="7.png">
+                </div>
+                <div class="img">
+                  <img src="images/prac1/6.png" alt="Vista de la página web desde un navegador" data-original="6.png">
+                </div>
+              </div>
+            <p>Acceso desde varios dispositivos</p>
+            <div class="image-gallery">
+              <div class="img">
+                <img src="images/prac1/14.jpg" alt="Prueba de acceso desde computadora 1" data-original="14.jpg">
+              </div>
+              <div class="img">
+                <img src="images/prac1/16.jpg" alt="Prueba de acceso desde computadora 2" data-original="16.jpg">
+              </div>
+              <div class="img">
+                <img src="images/prac1/19.jpeg" alt="Prueba de acceso desde computadora 3" data-original="19.jpeg">
+              </div>
+            </div>
+            <div class="modal">
+              <img src="" alt="" class="fullsimg">
+              <p class="caption"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="header">
+        <div class="section-header">
+          <h2 class="section-heading" id="conc">Conclusión</h2>
+          <div class="underline"></div>
+          <p>Se logró identificar la Ip de acceso de la red de tu router y se accedió a su ruta de configuración.</p>
+          <p>Se elaboró un mapa de accesos de equipos y sus respectivas IPs en la Red.</p>
+          <p>Se instaló Xampp para configurar un servidor local, habilitando el acceso al puerto 80 desde el firewall del equipo configurado como el servidor local.</p>
+          <p>Se coomprobó el acceso al sitio web montado en el servidor local desde 3 dispositivos distintos</p>
+        </div>
+      </section>
+      <section class="header">
+        <div class="section-header">
+          <h2 class="section-heading" id="ref">Referencias</h2>
+          <div class="underline"></div>
+          <ol>
+            <li>Devece, C., Guiral, J., & Lapiedra, R. (2011). Introducción a la gestión de sistemas de información en la empresa. Universitat Jaume I.</li>
+            <li>Stair, R., & Reynolds, G. (2010). Principles of Information Systems. Boston: Course Technology.</li>
+          </ol>
+        </div>
+      </section>
       <a href="#">
-        <div class="hamburger-menu"></div>
         <div class="scroll-btn" id ="scrollbtn">
           <i class="fas fa-arrow-up"></i>
         </div>
       </a>
-
       <footer class="footer">
         <div class="footer-content">
           <p class="copyright">

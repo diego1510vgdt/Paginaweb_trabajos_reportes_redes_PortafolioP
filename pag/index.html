@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Redes digitales de datos</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="shortcut icon" href="images/icon.ico"/>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
@@ -46,23 +47,22 @@
           <a href="indexlab.html"><button>Ir al Laboratorio</button></a>
         </div>
       </header>
-
       <section class="sidebar">
         <ul class="menu">
           <li class="menu-item">
             <a href="#" class="menu-link" data-content="Home">Home</a>
           </li>
           <li class="menu-item">
-            <a href="#" class="menu-link" data-content="Acerca de">Acerca de</a>
+            <a href="#acerca-de" class="menu-link" data-content="Acerca de">Acerca de</a>
           </li>
           <li class="menu-item">
-            <a href="#" class="menu-link" data-content="Trabajos">Trabajos</a>
+            <a href="#trabajos" class="menu-link" data-content="Trabajos">Trabajos</a>
           </li>
           <li class="menu-item">
-            <a href="#" class="menu-link" data-content="Autor">Autor</a>
+            <a href="#autor" class="menu-link" data-content="Autor">Autor</a>
           </li>
           <li class="menu-item">
-            <a href="#" class="menu-link" data-content="Contacto">Contacto</a>
+            <a href="#contacto" class="menu-link" data-content="Contacto">Contacto</a>
           </li>
         </ul>
         <div class="social-media">
@@ -74,7 +74,7 @@
 
       <section class="about-us">
         <div class="section-header">
-          <h1 class="section-heading">Acerca de</h1>
+          <h1 class="section-heading" id="acerca-de">Acerca de</h1>
           <div class="underline"></div>
         </div>
         <div class="services">
@@ -148,21 +148,20 @@
           </div>
         </div>
       </section>
-
       <section class="team">
         <div class="section-header">
-          <h1 class="section-heading">Trabajos y Tareas</h1>
+          <h1 class="section-heading" id="trabajos">Trabajos y Tareas</h1>
           <div class="underline"></div>
         </div>
         <div class="cards-wrapper">
-          <a href="#">
+          <a href="tarea1.html">
             <div class="card" data-tilt>
               <div class="card-img-wrapper">
-                <img src="images/tarea1.png"/>
+                <img src="images/tarea1.jpg"/>
               </div>
               <div class="card-info">
                 <h2>Protocolos de comunicación</h2>
-                <h3>Contador de pulsos</h3>
+                <h3>Ejercicios de arduinos</h3>
                 <p>
                   Práctica sobre la comunicación de dos arduinos mediante el protocolo serial
                 </p>
@@ -171,13 +170,25 @@
           </a>
         </div>
       </section>
-      <section class="autor">
+      <section class="about-us">
+        <div class="section-header">
+          <h1 class="section-heading" id="autor">Autor</h1>
+          <div class="underline"></div>
+          <div class="imgauto">
+            <img src="images/autor.jpg" alt="">
+            <div class="texto-autor">
+              <p>Diego Vega De Ita</p>
+              <p> Estudiante de Ingenieria en Sistemas Computacionales en la Universidad Iberoamericana de Puebla</p>
+              <p>Skills</p>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="contact">
         <div class="contact-wrapper">
           <div class="contact-left"></div>
           <div class="contact-right">
-            <h2 class="contact-heading">Contacta al autor</h2>
+            <h2 class="contact-heading" id="contacto">Contacta al autor</h2>
             <form>
               <div class="input-group">
                 <input type="text" class="field" />

@@ -9,7 +9,7 @@
 
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth;
+  scroll-behavior:smooth;
 }
 
 .spinner-container {
@@ -248,6 +248,14 @@ html {
   overflow: hidden;
 }
 
+.header-tarea1{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  perspective: 100rem;
+  overflow: hidden;
+}
+
 .img-wrapper {
   width: 100%;
   height: 100%;
@@ -386,6 +394,37 @@ html {
   justify-content: center;
 }
 
+.frame-tinker{
+  align-content: center;
+  align-self: center;
+  position: relative;
+}
+
+.frame-tinker iframe{
+  border: 1px solid  rgba(0, 0, 0, 0.5);
+  margin: 5%;
+  border-radius: 10px;
+}
+
+.intro{
+  font-family: "Josefin Slab", serif;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 10rem;
+  margin-bottom: 4rem;
+  margin-left: 20rem;
+  margin-right: 20rem;
+}
+
+.meto{
+  font-family: "Josefin Slab", serif;
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 10rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
 .social-media i {
   font-size: 2rem;
   margin: 1rem;
@@ -413,8 +452,36 @@ html {
 .section-header {
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 7rem 0 10rem 0;
+  text-align: center;
+}
+
+.section-header h3{
+  font-family: "Baloo Da 2", serif;
+  font-size: 2.6rem;
+  line-height: 2.6rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  color: #4b4b4b;
+  text-align:left;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.section-header p,ol{
+  font-family: "Josefin Slab", serif;
+  font-size: 2rem;
+  text-align: justify;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.section-header li{
+  margin-bottom: 2rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .section-heading {
@@ -429,6 +496,7 @@ html {
   width: 12rem;
   height: 0.3rem;
   background-color: #25c2c2;
+  align-self: center;
 }
 
 .services {
@@ -550,6 +618,99 @@ html {
   opacity: 0.8;
   border-radius: 0.5rem;
   transition: opacity 0.3s;
+}
+
+.image-gallery{
+  position: relative;
+  height: auto;
+  width: 90%;
+  margin: auto;
+  padding: 45px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+  min-height: 100vh;
+  grid-gap: 2rem;
+}
+
+.img {
+  position: relative;
+  height: 95%;
+  width: 95%;
+  overflow: hidden;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+
+
+.diagrama img{
+  width: 80%;
+  height: 80%;
+  align-self: center;
+}
+
+.img img:hover{
+  transform: scale(1.2);
+}
+
+.modal{
+  background:rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.25s ease-out;
+}
+
+.modal.open{
+  opacity: 1;
+  pointer-events: all;
+}
+
+.fullsimg{
+  position: absolute;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0.5);
+  transition: all 0.25s ease-out;
+}
+
+.fullsimg.open{
+  transform: translate(-50%,-50%) scale(1);
+}
+
+.modal p{
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%,-5%);
+}
+
+.imgauto{
+  height: 100%;
+  width: 100%;
+}
+
+.imgauto img{
+  height: 25%;
+  width: 25%;
+  margin-top: 5%;
+  display: block;
+  margin-left:5%;
+  margin-right: auto;
+  border-radius: 8px;
 }
 
 .card:hover .card-img-wrapper img {
@@ -775,8 +936,8 @@ html {
 
 .back-btn {
   position: fixed;
-  right: 5rem;
-  bottom: 5rem;
+  right: 95%;
+  bottom: 90%;
   width: 4.5rem;
   height: 4.5rem;
   background-color: #25c2c2;
