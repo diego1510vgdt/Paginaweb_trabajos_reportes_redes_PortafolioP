@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="esp">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Redes digitales de datos - Lab</title>
+    <title>Lab - Práctica 2</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="shortcut icon" href="images/icon.ico"/>
     <link
@@ -28,8 +28,13 @@
         <div></div>
       </div>
     </div>
-
     <div class="container">
+      <div class="hamburger-menu">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+        <span>Cerrar</span>
+      </div>
       <header class="header">
         <div class="img-wrapper">
           <img src="images/prac2bg.jpg" />
@@ -43,28 +48,306 @@
           </div>
         </a>
       </header>
-
-      <header class="header">
+      <section class="sidebar">
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="#" class="menu-link" data-content="Home">Home</a>
+          </li>
+          <li class="menu-item">
+            <a href="#intro" class="menu-link" data-content="Introducción">Introducción</a>
+          </li>
+          <li class="menu-item">
+            <a href="#objt" class="menu-link" data-content="Objetivos">Objetivos</a>
+          </li>
+          <li class="menu-item">
+            <a href="#marco" class="menu-link" data-content="Marco Teórico">Marco</a>
+          </li>
+          <li class="menu-item">
+            <a href="#desa" class="menu-link" data-content="Desarrollo y Evidencias">Desarrollo</a>
+          </li>
+          <li class="menu-item">
+            <a href="#conc" class="menu-link" data-content="Conclusión">Conclusión</a>
+          </li>
+          <li class="menu-item">
+            <a href="#ref" class="menu-link" data-content="Referencias">Referencias</a>
+          </li>
+        </ul>
+        <div class="social-media">
+          <a href="https://www.facebook.com/diego.vegadeita.3/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/dvdi888/?hl=es-la"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/DiegoVegaDeIta1"><i class="fab fa-twitter"></i></a>
+        </div>
+      </section>
+      <section class="header">
         <div class="section-header">
-          <h2 class="section-heading">Introducción</h2>
+          <h2 class="section-heading" id="intro">Introducción</h2>
+          <div class="underline"></div>
+          <div class="intro">
+            <p></p>
+          </div>
+        </div>
+      </section>
+      <section class="header">
+        <div class="section-header">
+          <h2 class="section-heading" id="objt">Objetivos</h2>
+          <div class="underline"></div>
+          <h3 class="objetivos">Objetivo General</h3>
+          <p>Conocer, investigar e identificar los elementos que se utilizan para configurar 
+            una red local y el acceso a recursos de un equipo en red.</p>
+          <h3>Objetivos específicos</h3>
+          <ol>
+            <li>Utilizando el programa de Packet Tracer de Cisco, simula las siguientes redes 
+              de computadora, asignando a las computadoras las IP pertenecientes a la red 
+              192.168.0.0., utilizando la ventana de comandos utiliza la función ping para 
+              verificar la comunicación entre cada una de las computadoras. Graba un video de 
+              cada red simulada.</li>
+            <li>Elabora por cada red una tabla comparativa de cada elemento de red.</li>
+            <li>Elabora una tabla comparativa evaluando el tipo de cable (cruzado y directo) 
+              dependiendo de los dispositivos y como se conectan.</li>
+          </ol>
+        </div>
+      </section>
+      <section class="header">
+        <div class="section-header" >
+          <h2 class="section-heading" id="marco">Marco Teórico</h2>
+          <div class="underline"></div>
+          <p>Una <b>red de área local</b>(LAN) es una red de computadoras que abarca un área reducida 
+            a una casa, un departamento o un edificio.</p>
+          <p>La <b>topología de red</b> define la estructura de una red. Una parte de la definición 
+            topológica es la topología física, que es la disposición real de los cables o 
+            medios. La otra parte es la topología lógica, que define la forma en que los hosts 
+            acceden a los medios para enviar datos.</p>
+          <p>La <b>topología en estrella</b> conecta todos los nodos con un nodo central. El nodo 
+            central conecta directamente con los nodos, enviándoles la información del nodo de
+            origen, constituyendo una red punto a punto. Si falla un nodo, la red sigue 
+            funcionando, excepto si falla el nodo central, que las transmisiones quedan 
+            interrumpidas.</p>
+          <p>Un <b>enrutador</b> (del inglés router) o encaminador,​ es un dispositivo que permite 
+            interconectar computadoras que funcionan en el marco de una red. Su función es la 
+            de establecer la ruta que destinará a cada paquete de datos dentro de una red 
+            informática.</p>
+        </div>
+      </section>
+      <section class="header-desa">
+        <div class="section-header">
+          <h2 class="section-heading" id="desa">Desarollo y Evidencias</h2>
+          <div class="underline"></div>
+          <div class="meto">
+            <p>Se realizaron ejemplos en clase en los que se experimentó con los distintos cables 
+              y su comportamiento entre componentes. Se realizaron tres ejercicios en los que se 
+              usan dos computadoras, cable cruzado y cable directo, así como configuraciones 
+              dentro de la misma red local y con dos redes locales distintas</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/eT_BuAl3IEY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Hmf2RFIcs3o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/53AKuHJo-hY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>Se repitió uno de los ejercicios de clase en los que se conecta dos computasdoras 
+              mediante un cable cruzado y se utiliza la función ipconfig para verificar su 
+              dirección IP además de la función ping que envía cierta cantidad de bytes de una 
+              computadora a otra verificando la correcta conexión y comunicación. En este caso 
+              la red local que se configuró es la red con la IP 192.168.0.0</p>
+            <p>Como resultado del ejercicio se presenta el siguiente video además de una tabla 
+              con una pequeña descripción de los dispositivos utilizados.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/PGSYGrSTgOI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <table class="prac">
+              <tr>
+                <th>Red</th>
+                <th>Elemento de red</th>
+                <th>Descripción y funcionamiento</th>
+                <th>Imagen</th>
+              </tr>
+              <tr>
+                <td rowspan="2"><img src="images/prac2/a.jpg" alt=""></td>
+                <td>PC-PT PC0</td>
+                <td>Computadora como nodo final. Uso doméstico y de trabajo.</td>
+                <td><img src="images/prac2/41.jpg" alt=""></td>
+              </tr>
+              <tr>
+                <td>PC-PT PC1</td>
+                <td>Computadora como nodo final. Uso doméstico y de trabajo.</td>
+                <td><img src="images/prac2/42.jpg" alt=""></td>
+              </tr>
+            </table>
+            <p>En este ejercicio se añadió un repetidor de señal entre ambos dispositivos y se 
+              usó cable directo para interconectarlos. A diferencia del primer ejercicio, el 
+              cable directo de usó gracias a que son dispositivos de diferente tipo. En este 
+              caso la red local que se configuró es la red con la IP 192.168.0.0</p>
+            <p>Como resultado del ejercicio se presenta el siguiente video además de una tabla 
+              con una pequeña descripción de los dispositivos utilizados.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/b9Ex4nDRNc4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <table class="prac">
+              <tr>
+                <th>Red</th>
+                <th>Elemento de red</th>
+                <th>Descripción y funcionamiento</th>
+                <th>Imagen</th>
+              </tr>
+              <tr>
+                <td rowspan="3"><img src="images/prac2/b.jpg" alt=""></td>
+                <td>PC-PT PC0</td>
+                <td>Computadora como nodo final. Uso doméstico y de trabajo.</td>
+                <td><img src="images/prac2/41.jpg" alt=""></td>
+              </tr>
+              <tr>
+                <td>PC-PT PC1</td>
+                <td>Computadora como nodo final. Uso doméstico y de trabajo.</td>
+                <td><img src="images/prac2/42.jpg" alt=""></td>
+              </tr>
+              <tr>
+                <td>Repeater-PT Repeater0</td>
+                <td>Es un elemento de hardware que permite concentrar el tráfico de red que proviene de múltiples ordenadores y regenerar la señal.</td>
+                <td><img src="images/prac2/47.jpg" alt=""></td>
+              </tr>
+            </table>
+            <p>En este ejercicio se cambió el repetidor de señal por un switch y se agregó 
+              una tercer computadora. Se usó cable directo para interconectarlos. A diferencia 
+              del primer ejercicio, el cable directo de usó gracias a que son dispositivos de 
+              diferente tipo. En este caso la red local que se configuró es la red con la IP 
+              192.168.0.0</p>
+            <p>Como resultado del ejercicio se presenta el siguiente video además de una tabla 
+              con una pequeña descripción de los dispositivos utilizados.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/hyxB-gPYY2g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <table class="prac">
+              <tr>
+                <th>Red</th>
+                <th>Elemento de red</th>
+                <th>Descripción y funcionamiento</th>
+                <th>Imagen</th>
+              </tr>
+              <tr>
+                <td rowspan="4"><img src="images/prac2/c.jpg" alt=""></td>
+                <td>PC-PT PC0</td>
+                <td>Computadora como nodo final. Uso doméstico y de trabajo.</td>
+                <td><img src="images/prac2/41.jpg" alt=""></td>
+              </tr>
+              <tr>
+                <td>PC-PT PC1</td>
+                <td>Computadora como nodo final. Uso doméstico y de trabajo.</td>
+                <td><img src="images/prac2/42.jpg" alt=""></td>
+              </tr>
+              <tr>
+                <td>PC-PT PC2</td>
+                <td>Computadora como nodo final. Uso doméstico y de trabajo.</td>
+                <td><img src="images/prac2/43.jpg" alt=""></td>
+              </tr>
+              <tr>
+                <td>Switch-PT Switch0</td>
+                <td>Un switch permite a los dispositivos conectados compartir información y comunicarse entre sí.</td>
+                <td><img src="images/prac2/48.jpg" alt=""></td>
+              </tr>
+            </table>
+            <p>La última parte de la práctica ya ilustra una red local con m´s elementos, aquí 
+              se usa un repetidor de señal para conectar dos switches con 3 computadoras cada 
+              uno. Aquí hay un caso especial del uso de cable cruzado entre repetidores y 
+              switches. En este caso la red local que se configuró es la red con la IP 
+              192.168.0.0</p>
+            <p>Como resultado del ejercicio se presenta el siguiente video además de una tabla 
+              con una pequeña descripción de los dispositivos utilizados.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/RnjHoNaV1_w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <table class="prac">
+              <tr>
+                <th>Red</th>
+                <th>Elemento de red</th>
+                <th>Descripción y funcionamiento</th>
+                <th>Imagen</th>
+              </tr>
+              <tr>
+                <td rowspan="9"><img src="images/prac2/d.jpg" alt=""></td>
+                <td>PC-PT PC0</td>
+                <td>Computadora como nodo final. Uso doméstico y de trabajo.</td>
+                <td><img src="images/prac2/41.jpg" alt=""></td>
+              </tr>
+              <tr>
+                <td>PC-PT PC1</td>
+                <td>Computadora como nodo final. Uso doméstico y de trabajo.</td>
+                <td><img src="images/prac2/42.jpg" alt=""></td>
+              </tr>
+              <tr>
+                <td>PC-PT PC2</td>
+                <td>Computadora como nodo final. Uso doméstico y de trabajo.</td>
+                <td><img src="images/prac2/43.jpg" alt=""></td>
+              </tr>
+              <tr>
+                <td>PC-PT PC3</td>
+                <td>Computadora como nodo final. Uso doméstico y de trabajo.</td>
+                <td><img src="images/prac2/44.jpg" alt=""></td>
+              </tr>
+              <tr>
+                <td>PC-PT PC4</td>
+                <td>Computadora como nodo final. Uso doméstico y de trabajo.</td>
+                <td><img src="images/prac2/45.jpg" alt=""></td>
+              </tr>
+              <tr>
+                <td>PC-PT PC5</td>
+                <td>Computadora como nodo final. Uso doméstico y de trabajo.</td>
+                <td><img src="images/prac2/46.jpg" alt=""></td>
+              </tr>
+              <tr>
+                <td>Repeater-PT Repeater0</td>
+                <td>Es un elemento de hardware que permite concentrar el tráfico de red que proviene de múltiples ordenadores y regenerar la señal.</td>
+                <td><img src="images/prac2/47.jpg" alt=""></td>
+              </tr>
+              <tr>
+                <td>Switch-PT Switch0</td>
+                <td>Un switch permite a los dispositivos conectados compartir información y comunicarse entre sí.</td>
+                <td><img src="images/prac2/48.jpg" alt=""></td>
+              </tr>
+              <tr>
+                <td>Switch-PT Switch1</td>
+                <td>Un switch permite a los dispositivos conectados compartir información y comunicarse entre sí.</td>
+                <td><img src="images/prac2/49.jpg" alt=""></td>
+              </tr>
+            </table>
+            <p></p>
+            <table class="prac">
+              <tr>
+                <th></th>
+                <th>Computadora</th>
+                <th>Repetidor</th>
+                <th>Switch</th>
+              </tr>
+              <tr>
+                <th>Computadora</th>
+                <td>Cable Cruzado</td>
+                <td>Cable Directo</td>
+                <td>Cable Directo</td>
+              </tr>
+              <tr>
+                <th>Repetidor</th>
+                <td>Cable Directo</td>
+                <td>Cable Cruzado</td>
+                <td>Cable Cruzado</td>
+              </tr>
+              <tr>
+                <th>Switch</th>
+                <td>Cable Directo</td>
+                <td>Cable Cruzado</td>
+                <td>Cable Cruzado</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section class="header">
+        <div class="section-header">
+          <h2 class="section-heading" id="conc">Conclusión</h2>
           <div class="underline"></div>
         </div>
-      </header>
-
-      <header class="header">
+      </section>
+      <section class="header">
         <div class="section-header">
-          <h2 class="section-heading">Objetivos</h2>
+          <h2 class="section-heading" id="ref">Referencias</h2>
           <div class="underline"></div>
+          <ol>
+            <li>Devece, C., Guiral, J., & Lapiedra, R. (2011). Introducción a la gestión de sistemas de información en la empresa. Universitat Jaume I.</li>
+            <li>Stair, R., & Reynolds, G. (2010). Principles of Information Systems. Boston: Course Technology.</li>
+          </ol>
         </div>
-      </header>
-      
+      </section>
       <a href="#">
-        <div class="hamburger-menu"></div>
         <div class="scroll-btn" id ="scrollbtn">
           <i class="fas fa-arrow-up"></i>
         </div>
       </a>
-
       <footer class="footer">
         <div class="footer-content">
           <p class="copyright">
