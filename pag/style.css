@@ -407,7 +407,7 @@ html {
 }
 
 .intro{
-  font-family: "Josefin Slab", serif;
+  font-family: "Baloo Da 2", serif;
   font-size: 2rem;
   text-align: center;
   margin-top: 10rem;
@@ -469,19 +469,35 @@ html {
 }
 
 .section-header p,ol{
-  font-family: "Josefin Slab", serif;
+  font-family: "Baloo Da 2", serif;
   font-size: 2rem;
   text-align: justify;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 2rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.section-header li{
+  margin-bottom: 1rem;
   margin-left: 3rem;
   margin-right: 3rem;
 }
 
-.section-header li{
-  margin-bottom: 2rem;
-  margin-left: 3rem;
-  margin-right: 3rem;
+
+.prac   {
+  margin: auto;
+  font-family: "Baloo Da 2", serif;
+}
+
+.prac td, th{
+  text-align: left;
+  font-size: 2rem;;
+}
+
+.prac img{
+  width: 95%;
+  height: auto;
 }
 
 .section-heading {

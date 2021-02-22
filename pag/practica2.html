@@ -83,7 +83,13 @@
           <h2 class="section-heading" id="intro">Introducción</h2>
           <div class="underline"></div>
           <div class="intro">
-            <p></p>
+            <p>Dentro del uso de redes exsisten distintos componentes que, en conjunto, 
+              conforman la red local ya sea como nodos de salida, de transmisión, de entrada, 
+              etc. Estos componentes, principalmente de hardware, tienen cada uno su función 
+              para mantener la transmisión de datos dentro de la red local y hacia una red 
+              mayor ya sea internet o alguna red a nivel superior, incluso para extender 
+              dicha red local. En esta práctica se ilustran algunos de los elementos más 
+              comúnes que participan en las redes locales domésticas y de instituciones.</p>
           </div>
         </div>
       </section>
@@ -98,7 +104,7 @@
           <ol>
             <li>Utilizando el programa de Packet Tracer de Cisco, simula las siguientes redes 
               de computadora, asignando a las computadoras las IP pertenecientes a la red 
-              192.168.0.0., utilizando la ventana de comandos utiliza la función ping para 
+              192.168.0.0, utilizando la ventana de comandos utiliza la función ping para 
               verificar la comunicación entre cada una de las computadoras. Graba un video de 
               cada red simulada.</li>
             <li>Elabora por cada red una tabla comparativa de cada elemento de red.</li>
@@ -107,25 +113,59 @@
           </ol>
         </div>
       </section>
-      <section class="header">
+      <section class="header-marco">
         <div class="section-header" >
           <h2 class="section-heading" id="marco">Marco Teórico</h2>
           <div class="underline"></div>
-          <p>Una <b>red de área local</b>(LAN) es una red de computadoras que abarca un área reducida 
-            a una casa, un departamento o un edificio.</p>
-          <p>La <b>topología de red</b> define la estructura de una red. Una parte de la definición 
-            topológica es la topología física, que es la disposición real de los cables o 
-            medios. La otra parte es la topología lógica, que define la forma en que los hosts 
-            acceden a los medios para enviar datos.</p>
-          <p>La <b>topología en estrella</b> conecta todos los nodos con un nodo central. El nodo 
-            central conecta directamente con los nodos, enviándoles la información del nodo de
-            origen, constituyendo una red punto a punto. Si falla un nodo, la red sigue 
-            funcionando, excepto si falla el nodo central, que las transmisiones quedan 
-            interrumpidas.</p>
-          <p>Un <b>enrutador</b> (del inglés router) o encaminador,​ es un dispositivo que permite 
-            interconectar computadoras que funcionan en el marco de una red. Su función es la 
-            de establecer la ruta que destinará a cada paquete de datos dentro de una red 
-            informática.</p>
+          <p><b>Estaciones de trabajo: </b>Cada computadora conectada a la red conserva la 
+            capacidad de funcionar de manera independiente, realizando sus propios procesos. 
+            Asimismo, las computadoras se convierten en estaciones de trabajo en red, con acceso 
+            a la información y recursos contenidos en el servidor de archivos de la misma. Una 
+            estación de trabajo no comparte sus propios recursos con otras computadoras. Esta 
+            puede ser desde una PC XT hasta una Pentium, equipada según las necesidades del 
+            usuario; o también de otra arquitectura diferente como Macintosh, Silicon Graphics, 
+            Sun, etc.</p>
+          <p><b>Cableado: </b> La LAN debe tener un sistema de cableado que conecte las estaciones 
+            de trabajo individuales con los servidores de archivos y otros periféricos. Si sólo 
+            hubiera un tipo de cableado disponible, la decisión sería sencilla. Lo cierto es que 
+            hay muchos tipos de cableado, cada uno con sus propios defensores y como existe una 
+            gran variedad en cuanto al costo y capacidad, la selección no debe ser un asunto 
+            trivial.</p>
+            <ol>
+              <li><i>Cable de par trenzado: </i> Es con mucho, el tipo menos caro y más común de 
+                medio de red.</li>
+              <li><i>Cable coaxial: </i>  Es tan fácil de instalar y mantener como el cable de 
+                par trenzado, y es el medio que se prefiere para las LAN grandes.</li>
+              <li><i>Cable de fibra óptica: </i> Tiene mayor velocidad de transmisión que los 
+                anteriores, es inmune a la interferencia de frecuencias de radio y capaz de 
+                enviar señales a distancias considerables sin perder su fuerza. Tiene un costo 
+                mayor.</li>
+            </ol>
+            <p><b>Equipo de conectividad: </b> Por lo general, para redes pequeñas, la longitud 
+              del cable no es limitante para su desempeño; pero si la red crece, tal vez llegue 
+              a necesitarse una mayor extensión de la longitud de cable o exceder la cantidad de 
+              nodos especificada. Existen varios dispositivos que extienden la longitud de la 
+              red, donde cada uno tiene un propósito específico. Sin embargo, muchos dispositivos 
+              incorporan las características de otro tipo de dispositivo para aumentar la 
+              flexibilidad y el valor.</p>
+              <ol>
+                <li><i>Hubs o concentradores: </i>Son un punto central de conexión para nodos de 
+                  red que están dispuestos de acuerdo a una topología física de estrella.</li>
+                <li><i>Repetidores: </i>  Un repetidor es un dispositivo que permite extender la 
+                  longitud de la red; amplifica y retransmite la señal de red.</li>
+                <li><i>Puentes: </i> Un puente es un dispositivo que conecta dos LAN separadas 
+                  para crear lo que aparenta ser una sola LAN.</li>
+                <li><i>Ruteadores: </i> Los ruteadores son similares a los puentes, sólo que 
+                  operan a un nivel diferente. Requieren por lo general que cada red tenga el 
+                  mismo sistema operativo de red, para poder conectar redes basadas en topologías 
+                  lógicas completamente diferentes como Ethernet y Token Ring.</li>
+                <li><i>Compuertas: </i> Una compuerta permite que los nodos de una red se 
+                  comuniquen con tipos diferentes de red o con otros dispositivos. Podr´a tenerse, 
+                  por ejemplo, una LAN que consista en computadoras compatibles con IBM y otra 
+                  con Macintosh.</li>
+              </ol>>
+          <p><b>Packet Tracer</b> de Cisco es un programa de simulación de redes que permite a los 
+            estudiantes experimentar con el comportamiento de la red</p>
         </div>
       </section>
       <section class="header-desa">
@@ -148,7 +188,7 @@
             <p>Como resultado del ejercicio se presenta el siguiente video además de una tabla 
               con una pequeña descripción de los dispositivos utilizados.</p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/PGSYGrSTgOI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <table class="prac">
+            <table class="prac" width="90%">
               <tr>
                 <th>Red</th>
                 <th>Elemento de red</th>
@@ -156,7 +196,7 @@
                 <th>Imagen</th>
               </tr>
               <tr>
-                <td rowspan="2"><img src="images/prac2/a.jpg" alt=""></td>
+                <td rowspan="2" width="55%"><img src="images/prac2/a.jpg" alt=""></td>
                 <td>PC-PT PC0</td>
                 <td>Computadora como nodo final. Uso doméstico y de trabajo.</td>
                 <td><img src="images/prac2/41.jpg" alt=""></td>
@@ -174,7 +214,7 @@
             <p>Como resultado del ejercicio se presenta el siguiente video además de una tabla 
               con una pequeña descripción de los dispositivos utilizados.</p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/b9Ex4nDRNc4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <table class="prac">
+            <table class="prac" width="90%">
               <tr>
                 <th>Red</th>
                 <th>Elemento de red</th>
@@ -182,7 +222,7 @@
                 <th>Imagen</th>
               </tr>
               <tr>
-                <td rowspan="3"><img src="images/prac2/b.jpg" alt=""></td>
+                <td rowspan="3" width="55%"><img src="images/prac2/b.jpg" alt=""></td>
                 <td>PC-PT PC0</td>
                 <td>Computadora como nodo final. Uso doméstico y de trabajo.</td>
                 <td><img src="images/prac2/41.jpg" alt=""></td>
@@ -206,7 +246,7 @@
             <p>Como resultado del ejercicio se presenta el siguiente video además de una tabla 
               con una pequeña descripción de los dispositivos utilizados.</p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/hyxB-gPYY2g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <table class="prac">
+            <table class="prac" width="90%">
               <tr>
                 <th>Red</th>
                 <th>Elemento de red</th>
@@ -214,7 +254,7 @@
                 <th>Imagen</th>
               </tr>
               <tr>
-                <td rowspan="4"><img src="images/prac2/c.jpg" alt=""></td>
+                <td rowspan="4" width="55%"><img src="images/prac2/c.jpg" alt=""></td>
                 <td>PC-PT PC0</td>
                 <td>Computadora como nodo final. Uso doméstico y de trabajo.</td>
                 <td><img src="images/prac2/41.jpg" alt=""></td>
@@ -243,7 +283,7 @@
             <p>Como resultado del ejercicio se presenta el siguiente video además de una tabla 
               con una pequeña descripción de los dispositivos utilizados.</p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/RnjHoNaV1_w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <table class="prac">
+            <table class="prac" width="90%">
               <tr>
                 <th>Red</th>
                 <th>Elemento de red</th>
@@ -251,7 +291,7 @@
                 <th>Imagen</th>
               </tr>
               <tr>
-                <td rowspan="9"><img src="images/prac2/d.jpg" alt=""></td>
+                <td rowspan="9" width="55%"><img src="images/prac2/d.jpg" alt=""></td>
                 <td>PC-PT PC0</td>
                 <td>Computadora como nodo final. Uso doméstico y de trabajo.</td>
                 <td><img src="images/prac2/41.jpg" alt=""></td>
@@ -297,8 +337,10 @@
                 <td><img src="images/prac2/49.jpg" alt=""></td>
               </tr>
             </table>
-            <p></p>
-            <table class="prac">
+            <br>
+            <p>Realización de una tabla comparativa evaluando el tipo de cable (cruzado y directo) dependiendo de 
+              los dispositivos y como se conectan.</p>
+            <table class="prac" width="75%">
               <tr>
                 <th></th>
                 <th>Computadora</th>
@@ -331,6 +373,14 @@
         <div class="section-header">
           <h2 class="section-heading" id="conc">Conclusión</h2>
           <div class="underline"></div>
+          <ol>
+            <li>Utilizando el programa de Packet Tracer de Cisco, se simularon distintas redes de  computadora, asignando a las computadoras las IP pertenecientes a la red 
+              192.168.0.0, utilizando la ventana de comandos se usó la función ping para 
+              verificar la comunicación entre cada una de las computadoras.</li>
+            <li>Se elaboró una tabla comparativa por cada red ilustrando cada elemento de la red.</li>
+            <li>Se elaboró una tabla comparativa evaluando el tipo de cable (cruzado y directo) 
+              dependiendo de los dispositivos y como se conectan.</li>
+          </ol>
         </div>
       </section>
       <section class="header">
@@ -340,6 +390,7 @@
           <ol>
             <li>Devece, C., Guiral, J., & Lapiedra, R. (2011). Introducción a la gestión de sistemas de información en la empresa. Universitat Jaume I.</li>
             <li>Stair, R., & Reynolds, G. (2010). Principles of Information Systems. Boston: Course Technology.</li>
+            <li>Cisco. (s.f.). Cisco Networking Academy. Obtenido de Cisco Packet Tracer: <a href="https://www.netacad.com/es/courses/packet-tracer">https://www.netacad.com/es/courses/packet-tracer</a></li>
           </ol>
         </div>
       </section>
